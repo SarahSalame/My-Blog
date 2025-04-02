@@ -1,12 +1,13 @@
 import './BlogPosts.css'
 import Cards from './Cards'
 import { GoArrowUpRight } from "react-icons/go"
-import Image1 from "/assets/images/Image.png"
-import Image2 from "/assets/images/Image2.png"
-import Image3 from "/assets/images/Image3.png"
-import Image4 from "/assets/images/Image4.png"
-import Image5 from "/assets/images/Image5.png"
-import Image6 from "/assets/images/Image6.png"
+import Image1 from "../../../assets/images/Image1.png";
+import Image2 from "../../../assets/images/Image2.png";
+import Image3 from "../../../assets/images/Image3.png";
+import Image4 from "../../../assets/images/Image4.png";
+import Image5 from "../../../assets/images/Image5.png";
+import Image6 from "../../../assets/images/Image6.png";
+
 
 const BlogPosts = () => {
     const cardData=[
