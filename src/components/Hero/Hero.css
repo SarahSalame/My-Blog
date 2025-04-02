@@ -1,0 +1,73 @@
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: #1A1A1A;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+    .description{
+        color: #C0C5D0;
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        
+    }
+    .container {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        input{
+            width: 360px;
+            height: 48px;
+            padding-inline: 16px;
+            outline: none;
+            border-radius: 8px;
+            border: 1px solid #7F56D9;
+        }
+        input::placeholder {
+            font-weight: 400;                
+            font-size: 16px;                  
+            line-height: 24px;               
+            color: #6c6c6c;                    
+        }
+    }
+    button {
+        height: 48px;             
+        border-radius: 8px;       
+        border: 1px solid #ccc;    
+        background-color: #7F56D9;
+        color: #fff;
+    } 
+   
+    .link{
+        display: flex;
+        padding-top: 14px;
+    }
+    .container.column{
+        flex-direction: column;
+    }
+}
+#Home{
+    button{
+        width: 120px;
+    }
+}
+@media (max-width: 942px) {
+    .hero{
+        padding: 0 20px;
+        .container{
+            flex-direction: column;
+        }
+    }
+    #Home{
+        button{
+            min-width: 360px;
+        }
+    }
+}

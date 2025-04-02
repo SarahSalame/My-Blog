@@ -1,0 +1,51 @@
+.BlogPosts{
+    padding: 32px 70px;
+    h1{
+        padding-bottom: 56px;
+        color: #1A1A1A;
+        font-weight: 600;
+        font-size: 38px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        row-gap: 30px;
+        flex-wrap: wrap;
+        .card{
+            max-width: 387px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .more{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .icon{
+                    font-size: 24px;
+                }
+            }
+            .details{
+                color: #6941C6;
+                font-size: 14px;
+                padding-top: 32px;
+                padding-bottom: 12px;
+            }
+            .title{
+                color: #1A1A1A;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 32px;
+            }
+            .description{
+                color: #667085;
+                line-height: 24px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+@media (max-width: 942px) {
+    .BlogPosts{
+        padding: 0 20px;
+    }
+}
