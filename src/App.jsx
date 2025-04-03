@@ -6,29 +6,24 @@ import SignIn from "./components/Hero/SignIn";
 import SignUp from "./components/Hero/SignUp";
 import Footer from "./components/Footer";
 import { FaRegCopyright } from "react-icons/fa6";
+
 const App = () => {
   const navitems=[
-    {
-      href:"/",
-      content:"Home"
-    },
-    {
-      href:"/about",
-      content:"About"
-    }
-  ]
+    { href:"/", content:"Home" },
+    { href:"/about", content:"About" }
+  ];
   
   return (
     <>
-   <NavBar logo="Your Name" navItems={navitems} btn="Sign In"/>
-   <Routes>
-        <Route path="/" element={<Home/>}/>
+      <NavBar logo="Your Name" navItems={navitems} btn="Sign In"/>
+      <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} /> 
         <Route path="/signup" element={<SignUp />} /> 
-   </Routes>
-   <Footer icon= <FaRegCopyright /> info="2025 Blogs , vica web solutions"/>
+      </Routes>
+      <Footer icon={<FaRegCopyright />} info="2025 Blogs , vica web solutions"/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
